@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import Signin from "./pages/Signin";
 import SignUp from "./pages/Signup";
 import Forgetpassword from "./pages/Forgetpassword";
-import NewPassword from "./pages/NewPassword";
+import Newpassword from "./pages/Newpassword";
 import Modal from "./pages/Modal";
 import Frame1 from "./pages/Frame1";
 
@@ -88,7 +88,7 @@ function App() {
 
         <Route
           path="/newpassword"
-          element={<NewPassword />}
+          element={<Newpassword />}
         />
 
         <Route
