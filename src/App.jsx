@@ -8,13 +8,13 @@ import {
 
 import Home from "./pages/Home";
 import Signin from "./pages/Signin";
-import SignUp from "./pages/SignUp";
+import SignUp from "./pages/Signup";
 import Forgetpassword from "./pages/Forgetpassword";
 import NewPassword from "./pages/NewPassword";
 import Modal from "./pages/Modal";
 import Frame1 from "./pages/Frame1";
 
-import Sidebar from "./pages/sidebar";
+import Sidebar from "./pages/Sidebar";
 import Dashboard from "./pages/Dashboard";
 
 import CompleteProfile1 from "./pages/CompleteProfile1";
@@ -49,13 +49,6 @@ const DashboardLayout = () => {
     </div>
   );
 };
-
-
-// ===============================
-// SETTINGS
-// ===============================
-
-
 
 
 // ===============================
@@ -188,6 +181,6 @@ function App() {
 
     </Router>
   );
-}
+};
 
 export default App;
