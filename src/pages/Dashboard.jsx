@@ -2,16 +2,15 @@ import React, { useState } from "react";
 
 import illustration2 from "../assets/image/illustration2.png";
 import records from "../assets/image/records.png";
-import user from "../assets/image/user.png";
+import User from "../assets/image/User.png";
 import settingicon from "../assets/image/settingicon.png";
 import assignment from "../assets/image/assignment.png";
 import receipt from "../assets/image/receipt.png";
-import icons from "../assets/image/icons.png";
-import icon1 from "../assets/image/icon1.png";
-import chart from "../assets/image/chart.png";
 import Icons from "../assets/image/Icons.png";
-import { Link } from "react-router-dom";
+import Icon1 from "../assets/image/Icon1.png";
+import chart from "../assets/image/chart.png";
 
+import { Link } from "react-router-dom";
 
 // ==============================
 // PERIOD DROPDOWN
@@ -78,7 +77,6 @@ const PeriodDropdown = ({ selectedPeriod, setSelectedPeriod }) => {
           }
         `}
       >
-
         {periods.map((period) => (
           <button
             key={period}
@@ -102,8 +100,8 @@ const PeriodDropdown = ({ selectedPeriod, setSelectedPeriod }) => {
             {period}
           </button>
         ))}
-
       </div>
+
     </div>
   );
 };
@@ -113,12 +111,10 @@ const PeriodDropdown = ({ selectedPeriod, setSelectedPeriod }) => {
 // DASHBOARD
 // ==============================
 const Dashboard = () => {
-
   const [selectedPeriod, setSelectedPeriod] = useState("This Week");
 
   return (
     <div className="min-h-screen bg-gray-200 px-6 py-6 md:px-10 lg:px-14 text-gray-700">
-
 
       {/* ================= HEADER ================= */}
       <div className="flex items-start justify-between mb-8">
@@ -144,7 +140,7 @@ const Dashboard = () => {
 
           {/* USER IMAGE */}
           <img
-            src={user}
+            src={User}
             alt="User"
             className="w-10 h-10 object-contain"
           />
@@ -152,7 +148,6 @@ const Dashboard = () => {
         </div>
 
       </div>
-
 
 
       {/* ================= COMPLETE PROFILE ================= */}
@@ -183,12 +178,15 @@ const Dashboard = () => {
 
         </div>
 
-        <Link to="/CompleteProfile1" className="md:block px-7 py-3 rounded-lg bg-white text-sm font-medium text-gray-500 shadow-sm">
+
+        <Link
+          to="/CompleteProfile1"
+          className="md:block px-7 py-3 rounded-lg bg-white text-sm font-medium text-gray-500 shadow-sm"
+        >
           Get Started
         </Link>
 
       </div>
-
 
 
       {/* ================= DASHBOARD TITLE ================= */}
@@ -208,10 +206,8 @@ const Dashboard = () => {
       </div>
 
 
-
       {/* ================= BALANCE / INCOME / EXPENSES ================= */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
-
 
         {/* ESTIMATED BALANCE */}
         <div className="rounded-xl bg-[#013222] text-white px-6 py-6 min-h-[135px]">
@@ -235,7 +231,6 @@ const Dashboard = () => {
           </div>
 
         </div>
-
 
 
         {/* INCOME */}
@@ -270,7 +265,6 @@ const Dashboard = () => {
           </div>
 
         </div>
-
 
 
         {/* EXPENSES */}
@@ -309,7 +303,6 @@ const Dashboard = () => {
       </div>
 
 
-
       {/* ================= BOTTOM SECTION ================= */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
@@ -333,7 +326,6 @@ const Dashboard = () => {
           </div>
 
 
-
           {/* ================= CHART ================= */}
           <div className="relative flex justify-center items-center h-[180px]">
 
@@ -351,10 +343,8 @@ const Dashboard = () => {
           </div>
 
 
-
           {/* ================= CATEGORIES ================= */}
           <div className="grid grid-cols-2 mt-8 text-xs text-gray-500">
-
 
             <div>
 
@@ -392,7 +382,6 @@ const Dashboard = () => {
             </div>
 
 
-
             <div>
 
               <p className="mb-4">
@@ -416,7 +405,6 @@ const Dashboard = () => {
           </div>
 
         </div>
-
 
 
         {/* ================= RECENT RECORDS ================= */}
@@ -448,10 +436,8 @@ const Dashboard = () => {
       </div>
 
 
-
       {/* ================= AI ASSISTANT ================= */}
       <div className="mt-8 rounded-xl overflow-hidden border border-[#03C987]">
-
 
         {/* AI HEADER */}
         <div className="h-14 bg-[#03C987] flex items-center justify-between px-5">
@@ -464,7 +450,6 @@ const Dashboard = () => {
               className="w-5 h-5 object-contain"
             />
 
-
             <h2 className="text-white font-medium text-sm">
               AI Assistant
             </h2>
@@ -473,7 +458,7 @@ const Dashboard = () => {
 
 
           <img
-            src={icons}
+            src={Icons}
             alt=""
             className="w-6 h-6 object-contain"
           />
@@ -481,10 +466,8 @@ const Dashboard = () => {
         </div>
 
 
-
         {/* AI CONTENT */}
         <div className="h-[270px] flex flex-col items-center justify-center">
-
 
           <img
             src={records}

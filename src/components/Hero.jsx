@@ -3,7 +3,7 @@ import edulogo from "../assets/image/edulogo.png";
 import image1 from "../assets/image/image1.png";
 import frame1 from "../assets/image/frame1.png";
 import coins from "../assets/image/coins.png";
-import icon1 from "../assets/image/icon1.png";
+import Icon1 from "../assets/image/Icon1.png";
 import { Link } from "react-router-dom";
 
 const Hero = () => {

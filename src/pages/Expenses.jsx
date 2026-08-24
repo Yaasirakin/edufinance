@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import user from "../assets/image/user.png";
+import User from "../assets/image/User.png";
 import Deleteicon from "../assets/image/Deleteicon.png";
 import editicon from "../assets/image/editicon.png";
 import select from "../assets/image/select.png";

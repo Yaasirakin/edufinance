@@ -1,5 +1,5 @@
 import React from "react";
-import illustration from "../assets/image/illustration.png";
+import Illustration from "../assets/image/Illustration.png";
 import { Link } from "react-router-dom";
 
 const Frame1 = () => {
@@ -9,7 +9,7 @@ const Frame1 = () => {
       {/* Illustration */}
       <div className="animate-success">
         <img
-          src={illustration}
+          src={Illustration}
           alt="Account Created"
           className="w-full max-w-md object-contain"
         />
