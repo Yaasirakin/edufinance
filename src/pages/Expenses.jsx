@@ -114,7 +114,7 @@ const Expenses = () => {
           </button>
 
           <img
-            src={user}
+            src={User}
             alt="User"
             className="w-10 h-10 object-contain"
           />
@@ -160,6 +160,7 @@ const Expenses = () => {
               />
             </button>
 
+
             {showPeriodDropdown && (
               <div className="absolute right-0 top-full mt-2 w-40 bg-white border border-gray-100 rounded-lg shadow-lg z-30 overflow-hidden">
 
@@ -188,7 +189,7 @@ const Expenses = () => {
         {/* ADD EXPENSE */}
         <div className="flex justify-end mt-7">
 
-          <Link to="/AddExpenses">
+          <Link to="/addexpenses">
             <button
               type="button"
               className="px-8 py-2.5 bg-gray-600 hover:bg-gray-700 text-white text-sm rounded-full shadow-sm transition"
@@ -271,7 +272,7 @@ const Expenses = () => {
                   />
 
                   <img
-                    src={Editicon}
+                    src={editicon}
                     alt="Edit"
                     className="w-4 h-4 object-contain cursor-pointer"
                   />
@@ -369,13 +370,11 @@ const Expenses = () => {
 
             {/* Y AXIS */}
             <div className="h-64 flex flex-col justify-between text-[10px] text-gray-400 pb-1">
-
               <span>80</span>
               <span>60</span>
               <span>40</span>
               <span>20</span>
               <span>0</span>
-
             </div>
 
 
@@ -468,6 +467,7 @@ const Expenses = () => {
                   className="w-3 h-3 object-contain"
                 />
               </button>
+
 
               {showTopPeriodDropdown && (
                 <div className="absolute right-0 top-full mt-2 w-40 bg-white border border-gray-100 rounded-lg shadow-lg z-30 overflow-hidden">
