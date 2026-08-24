@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import illustration from "../assets/image/illustration.png";
+import Illustration from "../assets/image/Illustration.png";
 
 const ModalDone = () => {
   const navigate = useNavigate();
@@ -29,7 +29,7 @@ const ModalDone = () => {
         <div className="flex justify-center items-center mb-6">
 
           <img
-            src={illustration}
+            src={Illustration}
             alt="Profile updated"
             className="
               w-[180px]

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import illustration from "../assets/image/illustration.png";
+import Illustration from "../assets/image/Illustration.png";
 import receipt from "../assets/image/receipt.png";
 import dateicon from "../assets/image/dateicon.png";
 import select from "../assets/image/select.png";
@@ -572,7 +572,7 @@ const AddExpenses = ({ onClose, onSave }) => {
             <div className="flex justify-center mb-5">
 
               <img
-                src={illustration}
+                src={Illustration}
                 alt="Expense updated"
                 className="
                   w-full
