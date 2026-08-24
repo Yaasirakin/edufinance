@@ -2,11 +2,10 @@ import React, { useState } from "react";
 
 import User from "../assets/image/User.png";
 import Deleteicon from "../assets/image/Deleteicon.png";
-import Editicon from "../assets/image/Editicon.png";
+import editicon from "../assets/image/editicon.png";
 import select from "../assets/image/select.png";
 import { Link } from "react-router-dom";
 import AddIncome from "./AddIncome";
-
 
 const Income = () => {
   // ===============================
@@ -111,7 +110,6 @@ const Income = () => {
             className="text-gray-600 text-sm flex items-center gap-1"
           >
             €
-
             <span className="text-xs">
               ⌄
             </span>
@@ -124,7 +122,6 @@ const Income = () => {
           />
 
         </div>
-
       </div>
 
 
@@ -204,7 +201,20 @@ const Income = () => {
         {/* ADD INCOME */}
         <div className="flex justify-end mt-7">
 
-         <Link to="/AddIncome" className="px-8 py-2.5 bg-[#03C987] hover:bg-[#02b57a] text-white text-sm rounded-full shadow-sm transition">
+          <Link
+            to="/AddIncome"
+            className="
+              px-8
+              py-2.5
+              bg-[#03C987]
+              hover:bg-[#02b57a]
+              text-white
+              text-sm
+              rounded-full
+              shadow-sm
+              transition
+            "
+          >
             Add Income
           </Link>
 
@@ -241,6 +251,7 @@ const Income = () => {
           <div className="space-y-5">
 
             {incomes.map((income, index) => (
+
               <div
                 key={`${income.name}-${index}`}
                 className="flex items-center justify-between"
@@ -250,8 +261,11 @@ const Income = () => {
                 <div className="flex items-center gap-3 min-w-0">
 
                   <div className="w-7 h-7 rounded bg-green-100 flex items-center justify-center flex-shrink-0">
+
                     <span className="w-3 h-3 bg-green-400 rounded-sm"></span>
+
                   </div>
+
 
                   <div className="min-w-0">
 
@@ -275,14 +289,17 @@ const Income = () => {
                     {income.amount}
                   </span>
 
+
                   <img
                     src={Deleteicon}
                     alt="Delete"
                     className="w-4 h-4 object-contain cursor-pointer"
                   />
 
+
+                  {/* EDIT ICON */}
                   <img
-                    src={Editicon}
+                    src={editicon}
                     alt="Edit"
                     className="w-4 h-4 object-contain cursor-pointer"
                   />
@@ -290,6 +307,7 @@ const Income = () => {
                 </div>
 
               </div>
+
             ))}
 
           </div>
@@ -305,6 +323,7 @@ const Income = () => {
             <h2 className="text-base font-semibold text-gray-600">
               Categories
             </h2>
+
 
             <button
               type="button"
@@ -335,6 +354,7 @@ const Income = () => {
           <div className="space-y-6">
 
             {categories.map((category, index) => (
+
               <div
                 key={`${category.name}-${index}`}
                 className="flex items-center justify-between text-sm"
@@ -349,6 +369,7 @@ const Income = () => {
                 </span>
 
               </div>
+
             ))}
 
           </div>
@@ -359,11 +380,11 @@ const Income = () => {
 
 
       {/* ===============================
-          REAL-TIME SALE + TOP 3 INCOME
+          REAL-TIME INCOME + TOP 3 INCOME
       =============================== */}
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
 
-        {/* REAL-TIME SALE */}
+        {/* REAL-TIME INCOME */}
         <div className="rounded-xl bg-gray-50 px-6 py-6">
 
           <h2 className="text-base font-semibold text-gray-600 mb-5">
@@ -375,13 +396,20 @@ const Income = () => {
           <div className="flex items-center gap-5 text-xs text-gray-400 mb-5">
 
             <span className="flex items-center gap-2">
+
               <span className="w-2 h-2 rounded-full bg-green-500"></span>
+
               Today
+
             </span>
 
+
             <span className="flex items-center gap-2">
+
               <span className="w-2 h-2 rounded-full bg-green-200"></span>
+
               Yesterday
+
             </span>
 
           </div>
@@ -423,6 +451,7 @@ const Income = () => {
                 <div className="relative h-full flex items-end justify-around px-4">
 
                   {chartData.map((item, index) => (
+
                     <div
                       key={index}
                       className="flex items-end gap-1 h-full"
@@ -446,6 +475,7 @@ const Income = () => {
                       ></div>
 
                     </div>
+
                   ))}
 
                 </div>
@@ -490,6 +520,7 @@ const Income = () => {
                   alt=""
                   className="w-3 h-3 object-contain"
                 />
+
               </button>
 
 
@@ -497,6 +528,7 @@ const Income = () => {
                 <div className="absolute right-0 top-full mt-2 w-40 bg-white border border-gray-100 rounded-lg shadow-lg z-30 overflow-hidden">
 
                   {periods.map((period) => (
+
                     <button
                       key={period}
                       type="button"
@@ -516,6 +548,7 @@ const Income = () => {
                     >
                       {period}
                     </button>
+
                   ))}
 
                 </div>
@@ -560,6 +593,7 @@ const Income = () => {
                 Category
               </p>
 
+
               <p className="flex items-center gap-2 mb-4">
 
                 <span className="w-2 h-2 rounded-full bg-green-500"></span>
@@ -568,6 +602,7 @@ const Income = () => {
 
               </p>
 
+
               <p className="flex items-center gap-2 mb-4">
 
                 <span className="w-2 h-2 rounded-full bg-green-300"></span>
@@ -575,6 +610,7 @@ const Income = () => {
                 Freelance
 
               </p>
+
 
               <p className="flex items-center gap-2">
 

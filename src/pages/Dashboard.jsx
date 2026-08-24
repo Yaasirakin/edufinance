@@ -8,7 +8,7 @@ import assignment from "../assets/image/assignment.png";
 import receipt from "../assets/image/receipt.png";
 import Icons from "../assets/image/Icons.png";
 import Icon1 from "../assets/image/Icon1.png";
-import chart from "../assets/image/chart.png";
+import Chart from "../assets/image/Chart.png";
 
 import { Link } from "react-router-dom";
 
@@ -330,7 +330,7 @@ const Dashboard = () => {
           <div className="relative flex justify-center items-center h-[180px]">
 
             <img
-              src={chart}
+              src={Chart}
               alt="Expense chart"
               className="w-52 h-32 object-contain"
             />
