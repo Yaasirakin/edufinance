@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import user from "../assets/image/user.png";
+import User from "../assets/image/User.png";
 import Deleteicon from "../assets/image/Deleteicon.png";
 import Editicon from "../assets/image/Editicon.png";
 import select from "../assets/image/select.png";
@@ -118,7 +118,7 @@ const Income = () => {
           </button>
 
           <img
-            src={user}
+            src={User}
             alt="User"
             className="w-10 h-10 object-contain"
           />

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import user from "../assets/image/user.png";
+import User from "../assets/image/User.png";
 import fileicon from "../assets/image/fileicon.png";
 import load from "../assets/image/load.png";
 import robot from "../assets/image/robot.png";
@@ -8,7 +8,7 @@ import sendicon from "../assets/image/sendicon.png";
 import front from "../assets/image/front.png";
 import like from "../assets/image/like.png";
 import dislike from "../assets/image/dislike.png";
-import edit from "../assets/image/edit.png";
+import Edit from "../assets/image/Edit.png";
 
 const AIAssistant = () => {
   const [message, setMessage] = useState("");
@@ -56,7 +56,7 @@ const AIAssistant = () => {
               className="flex h-10 w-10 items-center justify-center rounded-full bg-[#03C987]/10"
             >
               <img
-                src={user}
+                src={User}
                 alt="Profile"
                 className="h-7 w-7 object-contain"
               />
@@ -127,7 +127,7 @@ const AIAssistant = () => {
 
                   <button type="button">
                     <img
-                      src={edit}
+                      src={Edit}
                       alt="Edit"
                       className="h-5 w-5 object-contain opacity-70"
                     />
@@ -184,7 +184,7 @@ const AIAssistant = () => {
 
                     <button type="button">
                       <img
-                        src={edit}
+                        src={Edit}
                         alt="Edit"
                         className="h-5 w-5 object-contain"
                       />
@@ -238,7 +238,6 @@ const AIAssistant = () => {
                   "
                 />
 
-
                 <button
                   type="button"
                   onClick={handleSend}
@@ -284,7 +283,6 @@ const AIAssistant = () => {
       {/* TOP HEADER */}
       <div className="mb-7 flex items-start justify-between">
 
-        {/* GREETING */}
         <div>
           <h1 className="text-2xl font-semibold text-gray-700">
             Hello, Linda
@@ -296,10 +294,8 @@ const AIAssistant = () => {
         </div>
 
 
-        {/* RIGHT SIDE */}
         <div className="flex items-center gap-6">
 
-          {/* CURRENCY */}
           <button
             type="button"
             className="flex items-center gap-1 text-gray-500"
@@ -320,7 +316,7 @@ const AIAssistant = () => {
             className="flex h-10 w-10 items-center justify-center rounded-full bg-[#03C987]/10"
           >
             <img
-              src={user}
+              src={User}
               alt="Profile"
               className="h-7 w-7 object-contain"
             />
@@ -337,7 +333,6 @@ const AIAssistant = () => {
         {/* GREEN HEADER */}
         <div className="flex h-[72px] items-center justify-between bg-[#03C987] px-6">
 
-          {/* LEFT */}
           <div className="flex items-center gap-3">
 
             <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20">
@@ -386,7 +381,6 @@ const AIAssistant = () => {
         {/* CHAT AREA */}
         <div className="relative min-h-[470px] px-10 py-9">
 
-          {/* CENTER CONTENT */}
           <div className="flex flex-col items-center">
 
             <h3 className="text-[24px] font-semibold text-gray-700">
@@ -471,7 +465,7 @@ const AIAssistant = () => {
                 <div className="mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center">
 
                   <img
-                    src={user}
+                    src={User}
                     alt=""
                     className="h-6 w-6 object-contain"
                   />
@@ -533,13 +527,11 @@ const AIAssistant = () => {
                   hover:bg-[#02b57a]
                 "
               >
-
                 <img
                   src={sendicon}
                   alt="Send"
                   className="h-5 w-5 object-contain"
                 />
-
               </button>
 
             </div>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import illustration2 from "../assets/image/illustration2.png";
 import records from "../assets/image/records.png";
 import User from "../assets/image/User.png";
-import settingicon from "../assets/image/settingicon.png";
+import Settingicon from "../assets/image/Settingicon.png";
 import assignment from "../assets/image/assignment.png";
 import receipt from "../assets/image/receipt.png";
 import Icons from "../assets/image/Icons.png";
@@ -445,7 +445,7 @@ const Dashboard = () => {
           <div className="flex items-center gap-2">
 
             <img
-              src={settingicon}
+              src={Settingicon}
               alt="AI Assistant"
               className="w-5 h-5 object-contain"
             />
