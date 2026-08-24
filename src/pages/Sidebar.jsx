@@ -5,7 +5,7 @@ import edulogo from "../assets/image/edulogo.png";
 import menu from "../assets/image/menu.png";
 import commerce from "../assets/image/commerce.png";
 import moneybag from "../assets/image/moneybag.png";
-import settingicon from "../assets/image/Settingicon.png";
+import Settingicon from "../assets/image/Settingicon.png";
 import usericon from "../assets/image/usericon.png";
 
 const Sidebar = () => {
@@ -42,7 +42,7 @@ const Sidebar = () => {
     {
       id: "settings",
       label: "Settings",
-      icon: settingicon,
+      icon: Settingicon,
       path: "/settings",
     },
   ];
@@ -117,11 +117,13 @@ const Sidebar = () => {
       {/* ================= NAVIGATION ================= */}
       <nav className="flex-1 px-4 py-8">
         <ul className="space-y-3">
+
           {navItems.map((item) => {
             const isActive = location.pathname === item.path;
 
             return (
               <li key={item.id}>
+
                 <button
                   type="button"
                   onClick={() => handleNavigation(item.path)}
@@ -138,14 +140,17 @@ const Sidebar = () => {
                     duration-200
                     text-left
                     cursor-pointer
+
                     ${
                       isActive
                         ? "bg-[#03C987] text-white shadow-md"
                         : "text-white/80 hover:bg-[#063326] hover:text-white"
                     }
+
                     ${isCollapsed ? "justify-center px-0" : ""}
                   `}
                 >
+
                   {/* ICON */}
                   <img
                     src={item.icon}
@@ -157,6 +162,7 @@ const Sidebar = () => {
                       flex-shrink-0
                       transition-all
                       duration-200
+
                       ${
                         isActive
                           ? "brightness-0 invert"
@@ -171,10 +177,13 @@ const Sidebar = () => {
                       {item.label}
                     </span>
                   )}
+
                 </button>
+
               </li>
             );
           })}
+
         </ul>
       </nav>
     </aside>
