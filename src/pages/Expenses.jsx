@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import user from "../assets/image/user.png";
 import Deleteicon from "../assets/image/Deleteicon.png";
-import Editicon from "../assets/image/Editicon.png";
+import editicon from "../assets/image/editicon.png";
 import select from "../assets/image/select.png";
 import AddExpenses from "./AddExpenses";
 
